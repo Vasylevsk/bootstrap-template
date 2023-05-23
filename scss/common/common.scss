@@ -1,0 +1,18 @@
+body {
+  font-family: $main-font;
+  background-color: $main-bg-color;
+  color: $main-text-color;
+}
+
+svg {
+  fill: $main-text-color;
+}
+
+input,
+button {
+  font-family: $main-font;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}

@@ -1,0 +1,17 @@
+@include tablet {
+  .content {
+    .filter {
+      &__content {
+        &-lg {
+          display: none;
+        }
+        &-sm {
+          display: block;
+          .accordion {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

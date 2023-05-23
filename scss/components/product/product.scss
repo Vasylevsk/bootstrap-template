@@ -1,0 +1,45 @@
+.content {
+  .product {
+    .items {
+      gap: 15px;
+      margin-left: 69px;
+    }
+    &__item {
+      padding: 35px 20px;
+      background-color: $product-bg-color;
+      border-radius: 16px;
+      width: calc(100% / 3 - 15px);
+      box-shadow: 0px 8px 16px $product-shadow-color;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        box-shadow: 0px 8px 16px $product-green-color;
+        color: $product-darkgreen-color;
+        .product__item-img {
+          transform: translateX(-100%);
+        }
+      }
+
+      &-tag {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        img {
+          padding-top: 5px;
+        }
+      }
+      &-img {
+        transition: 0.3s;
+        img {
+          width: 100%;
+          padding: 0 20px;
+          transform: scale(1.1);
+        }
+      }
+      &-info {
+        padding-top: 25px;
+      }
+    }
+  }
+}

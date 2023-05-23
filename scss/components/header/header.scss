@@ -1,0 +1,68 @@
+.header {
+  &__top {
+    font-size: $main-small-font-size;
+    margin: 5px 0;
+
+    &-phone {
+      svg {
+        margin-right: 17px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+
+    // .selectpicker {
+    //   border: none;
+    //   background-color: $main-bg-color;
+    //   color: $main-text-color;
+    // }
+
+    button {
+      font-size: $main-small-font-size;
+    }
+  }
+
+  &__bottom {
+    font-size: $header-bottom-font-size;
+    background-color: $header-bg-color;
+    box-shadow: 0px 0px 12px rgba(72, 79, 78, 0.17);
+    svg:hover {
+      fill: $main-green-color;
+    }
+
+    &-content {
+      .logo {
+        margin: 20px 0;
+      }
+
+      .search {
+        margin: 0 60px;
+        &__form {
+          display: flex;
+          justify-content: row;
+          .form-control {
+            &:focus {
+              border-color: $main-green-color;
+              box-shadow: none;
+            }
+          }
+          .btn {
+            color: $main-text-color;
+            border-color: $main-green-color;
+            &:hover {
+              background-color: $main-green-color;
+            }
+          }
+        }
+      }
+
+      li {
+        margin-right: 30px;
+      }
+      .person {
+        margin-right: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@include tablet {
+  .content {
+    .product {
+      margin-top: 20px;
+      .items {
+        margin: 0;
+      }
+      &__item {
+        width: calc(100% / 2 - 15px);
+      }
+    }
+  }
+}
+
+@include mobile {
+  .content {
+    .product {
+      &__item {
+        width: 100%;
+        &-img {
+          img {
+            padding: 0 100px;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}

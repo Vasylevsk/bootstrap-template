@@ -1,0 +1,17 @@
+@include laptop {
+  .header {
+    .search {
+      &__form {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    .search {
+      margin: 0;
+    }
+  }
+}

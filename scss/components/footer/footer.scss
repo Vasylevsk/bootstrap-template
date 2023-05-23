@@ -1,0 +1,102 @@
+.footer {
+  color: $footer-main-color;
+  background-color: $footer-top-color-bg;
+  font-size: $main-small-font-size;
+  margin-top: 60px;
+
+  &__top {
+    margin-top: 47px;
+    padding-bottom: 40px;
+    h3 {
+      color: $footer-header-color;
+      font-size: $footer-header-font-size;
+      font-weight: 700;
+    }
+
+    .col-6 {
+      padding-left: 80px;
+    }
+    .col {
+      padding-left: 140px;
+    }
+    .nav {
+      margin-top: 16px;
+      flex-direction: column;
+      .nav-link {
+        padding: 0;
+        text-decoration: none;
+        color: $footer-main-color;
+        &:hover {
+          color: $main-green-color;
+        }
+      }
+    }
+    form {
+      margin-top: 20px;
+      @extend %footer-border;
+      input {
+        padding-left: 20px;
+        background-color: initial;
+        color: $footer-header-color;
+        border: none;
+        &:hover {
+          background-color: initial;
+          color: $footer-header-color;
+        }
+        &:focus {
+          background-color: initial;
+          color: $footer-header-color;
+        }
+        &::-webkit-input-placeholder {
+          color: $footer-header-color;
+        }
+      }
+    }
+
+    svg {
+      fill: $footer-header-color;
+    }
+
+    &-info {
+      margin-top: 16px;
+      .logo {
+        margin-right: 10px;
+        img {
+          width: 17px;
+          height: 16px;
+        }
+      }
+    }
+    &-language {
+      @extend %footer-border;
+    }
+
+    &-social {
+      margin-top: 35px;
+      svg {
+        margin-right: 5px;
+      }
+    }
+    .dropdown {
+      .btn {
+        color: $footer-header-color;
+      }
+    }
+  }
+  &__bottom {
+    background-color: $footer-bottom-color-bg;
+    color: $footer-main-color;
+    &-content {
+      margin: 15px 0;
+    }
+    &-icon {
+      background-color: $footer-green-color;
+      padding: 5px 5px;
+    }
+    &-text {
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+}
