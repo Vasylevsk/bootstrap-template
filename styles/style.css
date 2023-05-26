@@ -273,6 +273,67 @@ button {
 .content .product__item-info {
   padding-top: 25px;
 }
+.content .product__page {
+  margin: 34px 0 0 60px;
+}
+.content .product__page .dropdown button {
+  width: 80px;
+  height: 35px;
+  font-size: small;
+  font-weight: 800;
+  border: 1px solid #e2e2e2;
+  background-color: #ffffff;
+  color: #17181a;
+  border-radius: 25px;
+}
+.content .product__page .dropdown button img {
+  margin-bottom: 3px;
+}
+.content .product__page .dropdown-toggle::after {
+  display: none;
+}
+.content .product .page-item:first-child .page-link,
+.content .product .page-item:last-child .page-link {
+  border-radius: initial;
+  width: 80px;
+}
+.content .product #img-page1,
+.content .product #img-page2 {
+  width: 90px;
+  background-color: #515151;
+  opacity: 20%;
+  border-radius: 100px;
+}
+.content .product #img-page1:hover,
+.content .product #img-page2:hover {
+  background-color: #99c63c;
+  transition: 0.3s;
+  opacity: initial;
+}
+.content .product #img-page1 img,
+.content .product #img-page2 img {
+  margin-left: 15px;
+}
+.content .product li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.content .product span {
+  font-weight: 800;
+}
+.content .product p {
+  color: #515151;
+  display: contents;
+}
+.content .product .pagination {
+  gap: 15px;
+}
+.content .product .page-number {
+  border: 1px solid #e2e2e2;
+  border-radius: 25px;
+  width: 70px;
+  height: 35px;
+}
 
 @media only screen and (max-width: 991px) {
   .content .product {
@@ -284,6 +345,9 @@ button {
   .content .product__item {
     width: calc(50% - 15px);
   }
+  .content .product__page {
+    margin: 34px 0 0 0;
+  }
 }
 @media (max-width: 767px) {
   .content .product__item {
@@ -292,6 +356,23 @@ button {
   .content .product__item-img img {
     padding: 0 100px;
     transform: scale(1.2);
+  }
+  .content .product__page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content .product__page #img-page1,
+  .content .product__page #img-page2 {
+    width: 80px;
+  }
+  .content .product__page .pagination {
+    gap: 5px;
+  }
+  .content .product__page-select {
+    width: 100%;
+  }
+  .content .product__page-select .dropdown button {
+    width: 100%;
   }
 }
 .footer {
